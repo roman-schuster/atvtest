@@ -13,11 +13,6 @@ Created on Sat Jul 21 21:57:39 2018
 from alpha_vantage.timeseries import TimeSeries
 import sys
 
-savdout = sys.stdout
-fscock = open('out.log', 'w')
-sys.stdout = fsock
-print(update_all_prices(cd, '7ZXZNBI2F6TB79HK'))
-
 def update_all_prices(company_dict, key):
     
     '''
