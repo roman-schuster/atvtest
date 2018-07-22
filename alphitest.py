@@ -11,7 +11,6 @@ Created on Sat Jul 21 21:57:39 2018
 
 
 from alpha_vantage.timeseries import TimeSeries
-import sys
 
 def update_all_prices(company_dict, key):
     
@@ -30,4 +29,5 @@ def update_all_prices(company_dict, key):
 cd = {'VTR': 0, 'TXT': 0, 'AEE': 0, 'EQIX': 0, 'BLK': 0}
 
 update_all_prices(cd, '7ZXZNBI2F6TB79HK')
+
 print(cd)
