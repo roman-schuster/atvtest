@@ -29,9 +29,5 @@ def update_all_prices(company_dict, key):
 
 cd = {'VTR': 0, 'TXT': 0, 'AEE': 0, 'EQIX': 0, 'BLK': 0}
 
-saveout = sys.stdout
-fsock = open('out.log', 'w')
-sys.stdout = fsock
-print(update_all_prices(cd, '7ZXZNBI2F6TB79HK'))
-sys.stdout = saveout
-fsock.close
+update_all_prices(cd, '7ZXZNBI2F6TB79HK')
+print(cd)
