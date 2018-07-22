@@ -9,8 +9,7 @@ Created on Sat Jul 21 21:57:39 2018
 # sudo python -m pip install alpha_vantage
 # sudo python -m pip install pandas
 
-import json
-from pandas import *
+
 from alpha_vantage.timeseries import TimeSeries
 import sys
 
