@@ -24,3 +24,4 @@ jsonrespo = response.json()
 
 jsonrespo_no_meta = jsonrespo['Time Series (Daily)']
 todaysies = jsonrespo_no_meta['2018-07-20']
+print(todaysies)
