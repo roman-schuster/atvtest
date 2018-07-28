@@ -20,10 +20,10 @@ for ticker in tickers:
         "symbol": ticker,
         "outputsize": "compact",
         "datatype": "json",
-        "apikey": "5LLVQ1QTTBK891BA",
+        "apikey": "5LLVQ1QTTBK891BA"
         }
-        
-    list_of_requests += data
+    
+    list_of_requests.append(data)
     
 for request in list_of_requests:
     response = requests.get(API_URL, data)
