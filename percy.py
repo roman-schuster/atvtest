@@ -10,7 +10,7 @@ import requests
 API_URL = "https://www.alphavantage.co/query"
 
 list_of_requests = []
-tickers = ['INTU', 'AMGN', 'DISCK', 'C', 'MNST']
+tickers = ['MO', 'ABBV', 'DLTR', 'MA', 'GPN']
 
 for ticker in tickers:
 
