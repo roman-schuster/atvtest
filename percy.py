@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sat Jul 21 23:30:45 2018
-
 @author: roman
 """
 
@@ -26,9 +25,8 @@ for ticker in tickers:
     list_of_requests.append(data)
     
 for request in list_of_requests:
-    response = requests.get(API_URL, data)
+    response = requests.get(API_URL, request)
     jsonrespo = response.json()
     jsonrespo_no_meta = jsonrespo['Time Series (Daily)']
     todaysies = jsonrespo_no_meta['2018-07-20']
     print(todaysies)
-
